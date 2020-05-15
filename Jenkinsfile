@@ -64,10 +64,10 @@ node(jenkinsEnv.nodeSelection(osNode)) {
             }
             dir ('apache-maven/target') {
                 sh "mv apache-maven-*-bin.zip apache-maven-dist.zip"
-                stash includes: 'apache-maven-dist.zip', name: 'maven-dist'
+                stash includes: 'apache-maven-dist.zip,apache-maven-wrapper-*.zip', name: 'maven-dist'
             }
             dir ('maven-wrapper/target') {
-                stash includes: 'apache-maven-wrapper-*.zip,maven-wrapper.jar', name: 'wrapper-dist'
+                stash includes: 'maven-wrapper.jar', name: 'wrapper-dist'
             }
         }
 
