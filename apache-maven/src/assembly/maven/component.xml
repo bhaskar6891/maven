@@ -72,7 +72,7 @@ under the License.
       <fileMode>0755</fileMode>
     </fileSet>
     <fileSet>
-      <directory>src/bin</directory>
+      <directory>src/assembly/maven/bin</directory>
       <outputDirectory>bin</outputDirectory>
       <includes>
         <include>*.cmd</include>
@@ -81,7 +81,7 @@ under the License.
       <lineEnding>dos</lineEnding>
     </fileSet>
     <fileSet>
-      <directory>src/bin</directory>
+      <directory>src/assembly/maven/bin</directory>
       <outputDirectory>bin</outputDirectory>
       <includes>
         <include>mvn</include>
@@ -93,11 +93,11 @@ under the License.
       <fileMode>0755</fileMode>
     </fileSet>
     <fileSet>
-      <directory>src/conf</directory>
+      <directory>src/assembly/maven/conf</directory>
       <outputDirectory>conf</outputDirectory>
     </fileSet>
     <fileSet>
-      <directory>src/lib</directory>
+      <directory>src/assembly/maven/lib</directory>
       <outputDirectory>lib</outputDirectory>
     </fileSet>
   </fileSets>
